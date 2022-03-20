@@ -20,7 +20,7 @@ public:
 	// GameEngine 이 세가지를 내용이 없더라도 구현해야함
 	virtual void GameInit() = 0;
 	virtual void GameLoop() = 0;
-	virtual void GameEnd() = 0;
+	virtual void GameEnd() = 0; 
 	
 	
 
