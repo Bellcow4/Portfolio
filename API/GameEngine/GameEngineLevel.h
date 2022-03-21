@@ -1,8 +1,11 @@
 #pragma once
 #include "GameEngineBase/GameEngineNameObject.h"
 
+class GameEngine;
 class GameEngineLevel : public GameEngineNameObject
 {
+	friend GameEngine;
+
 public:
 	// constructer destructer
 	GameEngineLevel();
@@ -18,6 +21,8 @@ public:
 
 protected:
 	virtual void Loading() = 0;
+
+	virtual void Update() = 0;
 
 private:
 	 template<typename ActorType>

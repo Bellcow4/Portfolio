@@ -16,6 +16,7 @@ public:
 
 protected:
 	void Loading() override;
+	void Update() override;
 
 private:
 	 
